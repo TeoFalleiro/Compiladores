@@ -26,3 +26,5 @@ REAL : INTEGER '.' INT_DIGIT+ | INTEGER '.' INT_DIGIT+ 'e' INTEGER | INTEGER '.'
 //Sequencias numeros inteiros seguidos de '.' mais numero pisitivo seguido ou não do digitos e|E|e+|E+ e uam sequencia de inteiros
 
 HEXADECIMAL : '0''x' HEX_DIGIT+;
+
+OPERADORES : '+'|'-'|'*'|'/'|'^'|'reset'|'status';
