@@ -44,11 +44,13 @@
       </java>
     </target>
 
+	  <!-- Executa java -cp build/jar/Numbers.jar -jar ${ANTLRJAR} org.antlr.v4.gui.TestRig *Formula* *progr* -gui *test1.txt* -->
     <target name="rungui" depends="jar">
       <java fork="true" classname="${grun}">
-        <arg value="Numbers"/>
-        <arg value="numbers"/>
+        <arg value="number"/>
+        <arg value="EXPR"/>
         <arg value="-gui"/>
+      	<arg value="text1.txt"/>
         <classpath>
           <path refid="classpath"/>
           <path location="${jar.dir}/${ant.project.name}.jar"/>
